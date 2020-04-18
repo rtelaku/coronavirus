@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>COVID-19</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="https://www.flaticon.com/premium-icon/icons/svg/2811/2811484.svg">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawVisualization);
+
+      function drawVisualization() {
+        // Some raw data (not necessarily accurate)
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Të infektuar', 'Të vdekur', 'Të shëruar'],
+          ['24.03.2020',  63,         1,         0],
+          ['08.04.2020',  184,        5,        30],
+          ['18.04.2020',  510,       12,        93],
+          ['08.04.2020',  ,       5,        30],
+          
+        ]);
+
+        var options = {
+          title : 'Statistikat e Covid-19 në Kosovë ',
+          vAxis: {title: 'Numri'},
+          hAxis: {title: 'Dita'},
+          seriesType: 'bars',
+          series: {5: {type: 'line'}}        };
+
+        var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Ferizaj',     81],
+          ['Malisheva',     70],
+          ['Prishtina',  57],
+          ['Viti', 33],
+          ['Prizren',    28]
+        ]);
+
+        var options = {
+          title: 'Komunat më të prekura'
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('chart_divv'));
+
+        chart.draw(data, options);
+      }
+  
+
+    </script>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- Navbar Area -->
+        <div class="mag-main-menu" id="sticker">
+            <div class="classy-nav-container breakpoint-off">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="magNav">
+
+                    <!-- Nav brand -->
+                    <a href="index.html" class="nav-brand"><img src="icon.png" alt=""></a>
+
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Nav Content -->
+                    <div class="nav-content d-flex align-items-center">
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Nav Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li class="active"><a href="index.html">Hyrje</a></li>
+                                    <li><a href="#lajme">Lajme</a></li>
+                                    <li><a href="#info">Info</a></li>
+                                    <li><a href="#statistika">Statistika</a></li>
+                                </ul>
+                            </div>
+                            <!-- Nav End -->
+                        </div>
+
+                        <div class="top-meta-data d-flex align-items-center">
+                            <!-- Top Search Area -->
+                            <div class="top-search-area">
+                                <form action="index.html" method="post">
+                                    <input type="search" name="top-search" id="topSearch" placeholder="Kërko...">
+                                    <button type="submit" class="btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </form>
+                            </div>
+                            <!-- Login -->
+                           
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <div class="hero-area owl-carousel">
+        <!-- Single Blog Post -->
+        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url(corona.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- Post Contetnt -->
+                        <div class="post-content text-center">
+                            <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
+                               
+                            </div>
+                            <a href="video-post.html" class="post-title" data-animation="fadeInUp" data-delay="300ms">COVID-19</a>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url(img.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- Post Contetnt -->
+                        <div class="post-content text-center">
+                            <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
+                                
+                              
+                            </div>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url(file:///C:/Users/Gita/Desktop/mag/fightt.webp);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- Post Contetnt -->
+                        <div class="post-content text-center">
+                            <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
+                                
+                              
+                            </div>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Single Blog Post -->
+        <div class="hero-blog-post bg-img bg-overlay" style="background-image: url(p.jpg);">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                    <div class="col-12">
+                        <!-- Post Contetnt -->
+                        <div class="post-content text-center">
+                            <div class="post-meta" data-animation="fadeInUp" data-delay="100ms">
+                              
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ##### Mag Posts Area Start ##### -->
+    <section class="mag-posts-area d-flex flex-wrap">
+
+        <!-- >>>>>>>>>>>>>>>>>>>>
+         Post Left Sidebar Area
+   
+
+   
+
+             Main Posts Area
+        <<<<<<<<<<<<<<<<<<<<< -->
+        <div id="lajme" class="mag-posts-content mt-30 mb-30 p-30 box-shadow">
+            <!-- Trending Now Posts Area -->
+            <div class="trending-now-posts mb-30">
+                <!-- Section Title -->
+                <div class="section-heading">
+                    <h5>Lajmet e fundit</h5>
+                </div>
+
+                <div class="trending-post-slides owl-carousel">
+                    <!-- Single Trending Post -->
+                    <div class="single-trending-post">
+                        <img src="https://zeri.info/uploads/zeri.info/images/2020/April/16/auto_auto_Lajmi15861602771587035332.png" alt="">
+                        <div class="post-content">
+                            
+                            <a href="https://zeri.info/aktuale/342315/lajmi-i-fundit-31-persona-pozitiv-me-koronavirus-ne-kosove-pese-te-sheruar/" class="post-title" target="_blank">LAJMI I FUNDIT: 31 persona pozitiv me koronavirus në Kosovë, pesë të shëruar</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Trending Post -->
+                    <div class="single-trending-post">
+                        <img src="https://zeri.info/uploads/zeri.info/images/2020/April/17/auto_klinika-infektive-280120-11587154574.jpg" alt="">
+                        <div class="post-content">
+                           
+                            
+                            <a href="https://zeri.info/aktuale/342318/shkon-ne-84-numri-i-te-sheruarve-me-koronavirus-ne-kosove/" class="post-title" target="_blank">Shkon në 84 numri i të shëruarve me koronavirus në Kosovë</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Trending Post -->
+                    <div class="single-trending-post">
+                        <img src="https://zeri.info/uploads/zeri.info/images/2020/April/15/auto_93116123_1283240558540792_9069415627004837888_n1586967360.jpg" alt="">
+                        <div class="post-content">
+                        
+                            <a href="https://zeri.info/aktuale/341701/kujdes-orari-i-qarkullimit-ndryshon-cdo-tre-dite/" class="post-title" target="_blank">Kujdes! Orari i qarkullimit ndryshon çdo tre ditë</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Trending Post -->
+                    <div class="single-trending-post">
+                        <img src="https://zeri.info/uploads/zeri.info/images/2020/April/17/auto_ccc1587147103.jpg" alt="">
+                        <div class="post-content">
+                            <a href="https://zeri.info/aktuale/342289/msh-e-publikon-orarin-e-qarkullimit-per-datat-18-20-prill/" class="post-title" target="_blank">MSH e publikon orarin e qarkullimit për datat 18-20 prill</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Trending Post -->
+                    <div class="single-trending-post">
+                        <img src="https://zeri.info/uploads/zeri.info/images/2020/April/15/auto_Albin-Kurti-730x440-11586963067.png" alt="">
+                        <div class="post-content">
+                            <a href="https://zeri.info/aktuale/341684/ky-eshte-mergimtari-qe-i-dha-100-mije-euro-per-fondin-emergjent-te-qeverise/" class="post-title" target="_blank">Mergimtari qe dha 100 mije euro per fondin emergjent</a>
+                        </div>
+                    </div>
+
+                    <!-- Single Trending Post -->
+                    <div class="single-trending-post">
+                        <img src="https://zeri.info/uploads/zeri.info/images/2020/April/15/auto_kaqaniku1586943641.jpg" alt="">
+                        <div class="post-content">
+                           
+                            <a href="https://zeri.info/aktuale/341589/komuna-me-33-mije-banore-ne-kosove-qe-se-ka-asnje-rast-me-koronavirus/" class="post-title" target="_blank">Komuna me 33 mijë banorë në Kosovë që s’e ka asnjë rast me koronavirus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Feature Video Posts Area -->
+           
+                </div>
+            </div>
+
+            <!-- Most Viewed Videos -->
+            
+    </section>
+     <section id="info" class="about_us padding_top" id="info">
+        <div class="container">
+            
+                    <div class="about_us_text">
+                        <h2>Informata rreth COVID-19</h2>
+                        <p>Sëmundja koronavirus (COVID-19) është një sëmundje infektive e shkaktuar nga një koronavirus i zbuluar rishtazi. Disa prej njerëzve të infektuar me virusin COVID-19 do të shërohen pa kërkuar trajtim të veçantë. Personat e moshuar dhe ata me probleme themelore shëndetsore si sëmundja kardiovaskulare, diabeti, sëmundja kronike e frymëmarrjes dhe kanceri ka më shumë të ngjarë të zhvillojnë sëmundje serioze.
+Në këtë kohë, nuk ka vaksina ose trajtime specifike për COVID-19. Sidoqoftë, ka shumë prova klinike në vazhdim që vlerësojnë trajtimet e mundshme. OBSH do të vazhdojë të sigurojë informacione të azhurnuar sa më shpejt që gjetjet klinike të bëhen të disponueshme.</p>
+                        <a class="btn_2 " href="http://www.ishp.gov.al/event/cfare-eshte-koronavirusi/" target="_blank">Mëso më shumë</a>
+                        <div class="banner_item">
+                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us part end-->
+
+    <section class="feature_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section_tittle text-center">
+                        <h2>Simptomat</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="single_feature">
+                        <div class="single_feature_part" style="margin-left: 30px;">
+                            <span class="single_feature_icon"><img class="two" src="https://image.flaticon.com/icons/svg/2785/2785766.svg" alt="" width="30px"></span>
+                            <h4>Lodhje</h4>
+                            
+                        </div>
+                    </div>
+                    <div class="single_feature" style="margin-top: 40px;">
+                        <div class="single_feature_part" style="margin-left: 30px;">
+                            <span class="single_feature_icon"><img class="two" src="https://image.flaticon.com/icons/svg/2785/2785826.svg" alt="" width="30px"></span>
+                            <h4>Kollitje</h4>
+                      
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                        <div class="single_feature_img">
+                            <img style="border-radius: 50%; margin-left: 62px;" src="https://www.flaticon.com/premium-icon/icons/svg/2812/2812637.svg" alt=""><p style="text-align: center;">NUMRI EMERGJENT:038 200 80 800</p>
+                        </div>
+                </div>
+                <div class="col-lg-3 col-sm-12" >
+                    <div class="single_feature">
+                        <div class="single_feature_part" style="margin-bottom: 20px; margin-left:  60px;">
+                            <span class="single_feature_icon"><img class="two" src="https://image.flaticon.com/icons/svg/2785/2785836.svg" alt="" width="30px"></span>
+                            <h4>Temperaturë dhe ethe</h4>
+                           
+                        </div>
+                    </div>
+                    <div class="single_feature">
+                        <div class="single_feature_part" style="margin-bottom: 20px; margin-left: 60px;">
+                            <span class="single_feature_icon"><img class="two" src="https://image.flaticon.com/icons/svg/2785/2785763.svg" alt="" width="30px"></span>
+                            <h4>Pneumoni</h4>
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- our depertment part start-->
+    <section class="our_depertment section_padding" >
+        <div class="container" id="doc">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-12">
+                    <div class="depertment_content">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8">
+                                <h2>Si ta parandaloni:</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img class="two" src="https://image.flaticon.com/icons/svg/2785/2785802.svg"
+                                                    alt="" width="30px"></span>
+                                            <h4>#Rri n'shpi</h4>
+                                            <p>Qëndroni në shtëpi, dilni vetëm për raste emergjente.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img class="two" src="https://image.flaticon.com/icons/svg/2785/2785821.svg"
+                                                    alt="" width="30px"></span>
+                                            <h4>Mos e prekni fytyrën me duar</h4>
+                                            <p>Evitoni prekjen e fytyrës me duar për raste sigurie të bartjes së virusit në organizëm.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img class="two" src="https://image.flaticon.com/icons/svg/2785/2785839.svg"
+                                                    alt="" width="30px"></span>
+                                            <h4>Pastroni duart</h4>
+                                            <p>Duhet të pastroni duart çdo 20 minuta ngase virusi jeton në duar 10 minuta.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img class="two" src="https://image.flaticon.com/icons/svg/2785/2785828.svg"
+                                                    alt="" width="30px"></span>
+                                            <h4>Qëndroni në distancë</h4>
+                                            <p>Duhet te qëndroni në largësi 1.5 metra me njëri tjetrin, duke evituar kontaktin e duke qëndruar te sigurt.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our depertment part end-->
+
+      <section class="blog_part section_padding">
+        <div class="container">
+            <div class="col-md-12 heading-section text-center ftco-animate">
+            >
+            <h2 class="mb-4">Disa mënyra se si ta kaloni kohën e lirë</h2>
+            <p>Klikoni në foto për më shumë informata</p>
+          </div>
+        </div>
+            <div class="row">
+
+                <div class="col-md-8">
+                    <a href="https://www.filma24.to/" target="_blank">
+                    <div class="project img ftco-animate img-2 d-flex justify-content-center align-items-center" style="background-image: url(filma.jpg);">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                            <h3>Shikoni filma apo seri të ndryshme televizive</h3>
+                            
+                        </div>
+                    </div>
+                </a>
+
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <a href="https://bukinist.al/sq/" target="_blank">
+                            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(lexim.jpg); margin-top: -20px; ">
+                                <div class="overlay"></div>
+                                <div class="text text-center p-4">
+                                    <h3>Lexoni libra</h3>
+                                    
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-md-12">
+                            <a href="https://www.youtube.com/watch?v=pS7ohYO2Bz8" target="_blank">
+                            <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(ushtrime.jpg);">
+                                <div class="overlay"></div>
+                                <div class="text text-center p-4">
+                                    <h3>Ushtroni</h3>
+                                   
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <a href="http://albanian.cri.cn/541/2013/05/17/182s122902.htm" target="_blank">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(meditim.jpg);">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                            <h3>Meditoni</h3>
+                           
+                        </div>
+                    </div>
+                </a>
+                </div>
+                <div class="col-md-8">
+                    <a href="https://www.udemy.com/" target="_blank">
+                    <div class="project img ftco-animate d-flex justify-content-center align-items-center" style="background-image: url(kurs.jpg); ">
+                        <div class="overlay"></div>
+                        <div class="text text-center p-4">
+                            <h3>Ndjekni kurse online</h3>
+                        
+                        </div>
+                    </div>
+                </a>
+                </div>
+                   
+        </div>
+    </section>
+
+    <!--::doctor_part start::-->
+    <section class="doctor_part section_padding" id="statistika">
+        <div class="container" >
+            <h2 style="text-align: center;">Statistikat në Kosovë</h2>
+            <div id="chart_div" style="width: 900px; height: 500px;"></div>
+            <div>
+                 <table class="wikitable" style="text-align:center">
+<tbody><tr>
+<th><b><a href="/wiki/Municipalities_of_Kosovo" title="Municipalities of Kosovo">Komunat</a></b>
+</th>
+<th>Rastet
+</th>
+<th>Vdekjet
+</th>
+<th>Të shëruarit
+</th></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Ferizaj" title="Ferizaj">Ferizaj</a></b>
+</td>
+<td>81
+</td>
+<td>2
+</td>
+<td>1
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Mali%C5%A1evo" title="Mališevo">Malisheva</a></b>
+</td>
+<td>70
+</td>
+<td>1
+</td>
+<td>21
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Pristina" title="Pristina">Prishtina</a></b>
+</td>
+<td>57
+</td>
+<td>2
+</td>
+<td>2
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Vitina" title="Vitina">Viti</a></b>
+</td>
+<td>33
+</td>
+<td>0
+</td>
+<td>2
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Prizren" title="Prizren">Prizren</a></b>
+</td>
+<td>28
+</td>
+<td>1
+</td>
+<td>2
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Gjilan" title="Gjilan">Gjilan</a></b>
+</td>
+<td>27
+</td>
+<td>1
+</td>
+<td>3
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Kamenica,_Kosovo" title="Kamenica, Kosovo">Kamenica</a></b>
+</td>
+<td>25
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/North_Mitrovica" title="North Mitrovica">Mitrovica</a></b>
+</td>
+<td>25
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Vu%C4%8Ditrn" title="Vučitrn">Vuçiterna</a></b>
+</td>
+<td>24
+</td>
+<td>1
+</td>
+<td>2
+</td></tr>
+
+<tr>
+<td align="left"><b><a href="/wiki/Suva_Reka" title="Suva Reka">Suhareka</a></b>
+</td>
+<td>22
+</td>
+<td>1
+</td>
+<td>1
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Gjakova" title="Gjakova">Gjakova</a></b>
+</td>
+<td>14
+</td>
+<td>0
+</td>
+<td>4
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Zve%C4%8Dan" title="Zvečan">Zveçan</a></b>
+</td>
+<td>13
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Leposavi%C4%87" title="Leposavić">Leposaviç</a></b>
+</td>
+<td>9
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Elez_Han" title="Elez Han">Han Elezi</a></b>
+</td>
+<td>7
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Lipljan" title="Lipljan">Lipjan</a></b>
+</td>
+<td>6
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Pe%C4%87" title="Peć">Pejë</a></b>
+</td>
+<td>6
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Kosovo_Polje" title="Kosovo Polje">Fushë Kosovë</a></b>
+</td>
+<td>5
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Podujevo" title="Podujevo">Podujevë</a></b>
+</td>
+<td>5
+</td>
+<td>1
+</td>
+<td>3
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Skenderaj" title="Skenderaj">Skenderaj</a></b>
+</td>
+<td>5
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Zubin_Potok" title="Zubin Potok">Zubin Potok</a></b>
+</td>
+<td>5
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Klina" title="Klina">Klina</a></b>
+</td>
+<td>4
+</td>
+<td>0
+</td>
+<td>1
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/%C5%A0timlje" title="Štimlje">Shtimje</a></b>
+</td>
+<td>3
+</td>
+<td>0
+</td>
+<td>1
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Istok" title="Istok">Istog</a></b>
+</td>
+<td>2
+</td>
+<td>1
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/De%C3%A7an" title="Deçan">Deçan</a></b>
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Glogovac" title="Glogovac">Drenas</a></b>
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>0
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Obili%C4%87" title="Obilić">Obiliq</a></b>
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td></tr>
+<tr>
+<td align="left"><b><a href="/wiki/Orahovac" title="Orahovac">Rahovec</a></b>
+</td>
+<td>1
+</td>
+<td>0
+</td>
+<td>1
+</td></tr>
+<tr>
+<th>Total
+</th>
+<th>480
+</th>
+<th>12
+</th>
+<th>84
+</th></tr>
+</tbody>
+
+</table>
+
+ <div id="chart_divv" style="width: 900px; height: 300px;"></div>
+ <img id="piechart" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/COVID-19_Outbreak_Number_of_Cases_in_Kosovo_by_Municipalities.svg/800px-COVID-19_Outbreak_Number_of_Cases_in_Kosovo_by_Municipalities.svg.png">
+            </div>
+
+            </div>
+        </div>
+    </section>
+    <!--::doctor_part end::-->
+
+
+    <!-- ##### Mag Posts Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area">
+        <div class="container">
+         
+        </div>
+
+        <!-- Copywrite Area -->
+        <div class="copywrite-area">
+            <div class="container">
+                <div class="row">
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-sm-6">
+                        <p class="copywrite-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                        <nav class="footer-nav">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Advertisement</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Script ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="js/active.js"></script>
+</body>
+
+</html>
